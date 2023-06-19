@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface KakaoService {
     public List<KakaoDTO> testAll();
+    public List<KakaoDTO> testAllJPA();
 
 }

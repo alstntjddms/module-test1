@@ -66,4 +66,9 @@ public class KakaoController {
     public List<KakaoDTO> kakaoAll() {
         return kakaoService.testAll();
     }
+
+    @GetMapping("/kakaoalljpa")
+    public List<KakaoDTO> kakaoAllJPA() {
+        return kakaoService.testAllJPA();
+    }
 }

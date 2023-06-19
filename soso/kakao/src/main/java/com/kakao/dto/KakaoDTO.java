@@ -1,5 +1,7 @@
 package com.kakao.dto;
 
+import com.kakao.entity.Kakao;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,6 +9,7 @@ import java.sql.Timestamp;
 
 @Getter
 @Setter
+@Builder
 public class KakaoDTO {
     private int id;
     // 카카오 아이디
@@ -31,4 +34,21 @@ public class KakaoDTO {
     private boolean kakaoMsgYn;
     // 동의항목 눌름 여부
     private boolean kakaoScopeCheck;
+
+//    public Kakao toEntity(KakaoDTO kakaoDTO) {
+//        return Kakao.builder()
+//                .id(id)
+//                .kakaoId(kakaoId)
+//                .kakaoAccessToken(kakaoAccessToken)
+//                .kakaoRefreshToken(kakaoRefreshToken)
+//                .kakaoEmail(kakaoEmail)
+//                .kakaoNickName(kakaoNickName)
+//                .kakaoGender(kakaoGender)
+//                .kakaoBirthday(kakaoBirthday)
+//                .kakaoRegisterDate(kakaoRegisterDate)
+//                .kakaoLoginDate(kakaoLoginDate)
+//                .kakaoMsgYn(kakaoMsgYn)
+//                .kakaoScopeCheck(kakaoScopeCheck)
+//                .build();
+//    }
 }

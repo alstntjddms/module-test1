@@ -12,4 +12,5 @@ public interface KakaoRAO {
 
     public List<KakaoDTO> testAll();
 
+
 }

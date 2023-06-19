@@ -1,15 +1,22 @@
 package com.kakao.entity;
 
-import jakarta.persistence.Entity;
+import com.kakao.dto.KakaoDTO;
+import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Timestamp;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @Entity
+@Table(name = "kakao")
 public class Kakao {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     // 카카오 아이디
     private String kakaoId;
@@ -33,4 +40,20 @@ public class Kakao {
     private boolean kakaoMsgYn;
     // 동의항목 눌름 여부
     private boolean kakaoScopeCheck;
+
+    @Builder
+    private Kakao(KakaoDTO kakaoDTO) {
+        this.id = kakaoDTO.getId();
+        this.kakaoId = kakaoDTO.getKakaoId();
+        this.kakaoAccessToken = kakaoDTO.getKakaoAccessToken();
+        this.kakaoRefreshToken = kakaoDTO.getKakaoRefreshToken();
+        this.kakaoEmail = kakaoDTO.getKakaoEmail();
+        this.kakaoNickName = kakaoDTO.getKakaoNickName();
+        this.kakaoGender = kakaoDTO.getKakaoGender();
+        this.kakaoBirthday = kakaoDTO.getKakaoBirthday();
+        this.kakaoRegisterDate = kakaoDTO.getKakaoRegisterDate();
+        this.kakaoLoginDate = kakaoDTO.getKakaoLoginDate();
+        this.kakaoMsgYn = kakaoDTO.isKakaoMsgYn();
+        this.kakaoScopeCheck = kakaoDTO.isKakaoScopeCheck();
+    }
 }
