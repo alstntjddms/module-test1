@@ -8,6 +8,8 @@ import com.kakao.service.itf.KakaoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,27 +31,27 @@ public class KakaoController {
     KakaoService kakaoService;
 
     @GetMapping("/kakao")
-    public String kakao() throws Exception {
+    public ResponseEntity kakao() throws Exception {
         log.info("kakao");
-        return aes256.encrypt(common.com());
+        return new ResponseEntity(aes256.encrypt(common.com()), HttpStatus.OK);
     }
 
     @GetMapping("/kakao1")
-    public String kakao1() {
+    public ResponseEntity kakao1() {
         log.info("kakao1");
-        return restAPI.get("http://localhost:8082/api/login");
+        return new ResponseEntity(restAPI.get("http://localhost:8082/api/login"), HttpStatus.OK);
     }
 
     @GetMapping("/kakao2")
-    public HashMap<String, String> kakao2() {
+    public ResponseEntity kakao2() {
         log.info("kakao1");
         HashMap<String, String> test = new HashMap<>();
         test.put("aa", "aa");
-        return restAPI.post("http://localhost:8082/api/login1", test, HashMap.class);
+        return new ResponseEntity(restAPI.post("http://localhost:8082/api/login1", test, HashMap.class), HttpStatus.OK);
     }
 
     @GetMapping("/kakao3")
-    public List<HashMap<String, String>> kakao3() {
+    public ResponseEntity kakao3() {
         log.info("kakao1");
         HashMap<String, String> test = new HashMap<>();
         test.put("aa", "aa");
@@ -57,7 +59,7 @@ public class KakaoController {
         list.add(test);
         list.add(test);
         list.add(test);
-        return restAPI.post("http://localhost:8082/api/login2", list, List.class);
+        return new ResponseEntity(restAPI.post("http://localhost:8082/api/login2", list, List.class), HttpStatus.OK);
     }
 
     @GetMapping("/kakaoall")
