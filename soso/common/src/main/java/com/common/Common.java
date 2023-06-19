@@ -11,6 +11,6 @@ public class Common {
     public String com(){
         log.info("common");
 
-        return "zzzz";
+        return "qwer";
     }
 }
