@@ -1,5 +1,6 @@
-package com.kakao.dto;
+package com.kakao.entity;
 
+import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,7 +8,8 @@ import java.sql.Timestamp;
 
 @Getter
 @Setter
-public class KakaoDTO {
+@Entity
+public class Kakao {
     private int id;
     // 카카오 아이디
     private String kakaoId;
