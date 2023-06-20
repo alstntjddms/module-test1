@@ -19,6 +19,12 @@
     </properties>
 
     <dependencies>
+        <!-- Spring Cloud Gateway START -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <!-- Spring Cloud Gateway END -->
         <dependency>
             <artifactId>common</artifactId>
             <groupId>com.soso</groupId>
@@ -41,6 +47,18 @@
             <!-- DB 관련 설정 의존성 제외 END -->
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.SR2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
