@@ -1,8 +1,8 @@
 package com.api;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
@@ -11,8 +11,8 @@ import org.springframework.web.method.HandlerTypePredicate;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-//@EnableDiscoveryClient
 @SpringBootApplication
+@EnableAutoConfiguration
 @ComponentScan(basePackages = {"com.common", "com.api"},
         excludeFilters = @ComponentScan.Filter(type = FilterType.REGEX, pattern = "com.common.db.*"))
 public class ApiApplication {

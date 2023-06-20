@@ -11,10 +11,10 @@ public class Routes {
     public RouteLocator routeLocator(RouteLocatorBuilder builder) {
         return builder
                 .routes()
-                .route("devsky-api-01", p -> p.path("/api/kakao/**")
+                .route("kakao_route", p -> p.path("/api/kakao/**")
                         .uri("http://localhost:8081"))
 
-                .route("devsky-api-02", p -> p.path("/api/login/**")
+                .route("login_route", p -> p.path("/api/login/**")
                         .uri("http://localhost:8082"))
                 .build();
     }

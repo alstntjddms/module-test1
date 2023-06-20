@@ -19,11 +19,6 @@
     </properties>
 
     <dependencies>
-        <!-- Spring Cloud Gateway START -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
         <!-- Spring Cloud Gateway END -->
         <dependency>
             <artifactId>common</artifactId>
@@ -46,6 +41,11 @@
             </exclusions>
             <!-- DB 관련 설정 의존성 제외 END -->
         </dependency>
+        <!-- Spring Cloud Gateway START -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -53,7 +53,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Greenwich.SR2</version>
+                <version>2022.0.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
