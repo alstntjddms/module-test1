@@ -1,5 +1,6 @@
 package com.api.RPcontroller;
 
+import com.common.restapi.AsyncRestAPI;
 import com.common.restapi.RestAPI;
 import com.common.url.URL;
 import org.slf4j.Logger;
@@ -15,8 +16,11 @@ import java.util.HashMap;
 @RestController
 public class RPKakaoController {
     private static final Logger log = LoggerFactory.getLogger(RPKakaoController.class);
+
     @Autowired
     RestAPI restAPI;
+    @Autowired
+    AsyncRestAPI asyncRestAPI;
 
     @GetMapping("/kakao2")
     public ResponseEntity kakao2() {
@@ -25,7 +29,7 @@ public class RPKakaoController {
         HashMap<String, String> test = new HashMap<>();
         test.put("test", "kakao");
         System.out.println(URL.KAKAO_SERVER);
-        return new ResponseEntity(restAPI.post(URL.KAKAO_SERVER + "2", test, HashMap.class), HttpStatus.OK);
+        return new ResponseEntity(asyncRestAPI.post(URL.KAKAO_SERVER + "2", test, HashMap.class).block(), HttpStatus.OK);
     }
 
 }
