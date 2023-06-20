@@ -1,6 +1,7 @@
-package com.api.controller;
+package com.api.RPcontroller;
 
 import com.common.restapi.RestAPI;
+import com.common.url.URL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,8 @@ public class RPKakaoController {
         System.out.println("KakaoController.kakao2");
         HashMap<String, String> test = new HashMap<>();
         test.put("test", "kakao");
-        return new ResponseEntity(restAPI.post("http://localhost:8081/api/kakao2", test, HashMap.class), HttpStatus.OK);
+        System.out.println(URL.KAKAO_SERVER);
+        return new ResponseEntity(restAPI.post(URL.KAKAO_SERVER + "2", test, HashMap.class), HttpStatus.OK);
     }
+
 }
