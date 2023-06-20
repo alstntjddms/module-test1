@@ -23,6 +23,22 @@
             <artifactId>common</artifactId>
             <groupId>com.soso</groupId>
             <version>0.0.1-SNAPSHOT</version>
+            <!-- DB 관련 설정 의존성 제외 START -->
+            <exclusions>
+                <exclusion>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.mybatis.spring.boot</groupId>
+                    <artifactId>mybatis-spring-boot-starter</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-data-jpa</artifactId>
+                </exclusion>
+            </exclusions>
+            <!-- DB 관련 설정 의존성 제외 END -->
         </dependency>
     </dependencies>
 

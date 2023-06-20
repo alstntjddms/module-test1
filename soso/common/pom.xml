@@ -18,11 +18,13 @@
     </properties>
 
     <dependencies>
+        <!-- SpringBoot Web START -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- DB 관련 설정 -->
+        <!-- SpringBoot Web END -->
+        <!-- DB 관련 START -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -37,16 +39,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        <!-- lombok -->
+        <!-- DB 관련 END -->
+        <!-- lombok START -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.28</version>
+            <version>RELEASE</version>
         </dependency>
+        <!-- lombok END -->
+        <!-- WebClient START -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
-
+        <!-- WebClient END -->
     </dependencies>
 </project>
