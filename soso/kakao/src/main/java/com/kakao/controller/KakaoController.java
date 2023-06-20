@@ -10,8 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,11 +41,10 @@ public class KakaoController {
         return new ResponseEntity(restAPI.get("http://localhost:8082/api/login"), HttpStatus.OK);
     }
 
-    @GetMapping("/kakao2")
-    public ResponseEntity kakao2() {
-        log.info("kakao1");
-        HashMap<String, String> test = new HashMap<>();
-        test.put("aa", "aa");
+    @PostMapping("/kakao2")
+    public ResponseEntity kakao2(@RequestBody HashMap<String, String> test) {
+        log.info("kakao2");
+        System.out.println("KakaoController.kakao2");
         return new ResponseEntity(restAPI.post("http://localhost:8082/api/login1", test, HashMap.class), HttpStatus.OK);
     }
 

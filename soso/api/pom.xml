@@ -7,10 +7,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.kakao</groupId>
-    <artifactId>kakao</artifactId>
+    <groupId>com.api</groupId>
+    <artifactId>api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>kakao</name>
+    <name>api</name>
 
     <packaging>jar</packaging>
 
@@ -23,10 +23,6 @@
             <artifactId>common</artifactId>
             <groupId>com.soso</groupId>
             <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 

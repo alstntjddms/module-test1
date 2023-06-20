@@ -18,7 +18,8 @@
 		<module>common</module>
 		<module>login</module>
 		<module>kakao</module>
-	</modules>
+        <module>api</module>
+    </modules>
 	<properties>
 		<java.version>1.8</java.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
