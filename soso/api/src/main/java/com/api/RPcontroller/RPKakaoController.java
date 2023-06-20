@@ -22,14 +22,24 @@ public class RPKakaoController {
     @Autowired
     AsyncRestAPI asyncRestAPI;
 
+    // 비동기 APIgateway에서는 비동기메서드만 사용
     @GetMapping("/kakao2")
     public ResponseEntity kakao2() {
         log.info("kakao2");
         System.out.println("KakaoController.kakao2");
         HashMap<String, String> test = new HashMap<>();
         test.put("test", "kakao");
-        System.out.println(URL.KAKAO_SERVER);
         return new ResponseEntity(asyncRestAPI.post(URL.KAKAO_SERVER + "2", test, HashMap.class).block(), HttpStatus.OK);
+    }
+
+    // 동기
+    @GetMapping("/kakao3")
+    public ResponseEntity kakao3() {
+        log.info("kakao2");
+        System.out.println("KakaoController.kakao2");
+        HashMap<String, String> test = new HashMap<>();
+        test.put("test", "kakao");
+        return new ResponseEntity(restAPI.post(URL.KAKAO_SERVER + "2", test, HashMap.class), HttpStatus.OK);
     }
 
 }

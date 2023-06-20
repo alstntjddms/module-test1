@@ -44,7 +44,6 @@ public class KakaoController {
     @PostMapping("/kakao2")
     public ResponseEntity kakao2(@RequestBody HashMap<String, String> test) {
         log.info("kakao2");
-        System.out.println("KakaoController.kakao2");
         return new ResponseEntity(restAPI.post("http://localhost:8082/api/login1", test, HashMap.class), HttpStatus.OK);
     }
 
