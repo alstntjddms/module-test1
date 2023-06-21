@@ -53,5 +53,12 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
         <!-- WebClient END -->
+        <!-- bcrypt START -->
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
+        <!-- bcrypt END -->
     </dependencies>
 </project>

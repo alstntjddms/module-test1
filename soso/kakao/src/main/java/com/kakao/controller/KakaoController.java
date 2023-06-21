@@ -2,7 +2,7 @@ package com.kakao.controller;
 
 import com.common.Common;
 import com.common.restapi.RestAPI;
-import com.common.utils.AES256;
+import com.common.aes.AES256;
 import com.kakao.dto.KakaoDTO;
 import com.kakao.service.itf.KakaoService;
 import org.slf4j.Logger;

@@ -1,6 +1,5 @@
-package com.common.utils;
+package com.common.aes;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.Cipher;

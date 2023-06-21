@@ -1591,9 +1591,9 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:52:37.728 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
 2023-06-19 00:52:37.749 INFO  [com.kakao.controller.KakaoController] - kakao
 2023-06-19 00:52:37.750 INFO  [com.common.Common] - common
-2023-06-19 00:53:14.615 INFO  [com.login.LoginApplication] - Starting LoginApplication using Java 18.0.2.1 with PID 4232 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\login\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:53:14.617 INFO  [com.login.LoginApplication] - No active profile set, falling back to 1 default profile: "default"
-2023-06-19 00:53:15.085 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.login]' package. Please check your configuration.
+2023-06-19 00:53:14.615 INFO  [com.auth.AuthApplication] - Starting LoginApplication using Java 18.0.2.1 with PID 4232 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\login\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:53:14.617 INFO  [com.auth.AuthApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:53:15.085 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.auth]' package. Please check your configuration.
 2023-06-19 00:53:15.408 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8082 (http)
 2023-06-19 00:53:15.414 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8082"]
 2023-06-19 00:53:15.414 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1624,9 +1624,9 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
-2023-06-19 00:54:25.205 INFO  [com.login.LoginApplication] - Starting LoginApplication using Java 18.0.2.1 with PID 2612 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\login\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:54:25.208 INFO  [com.login.LoginApplication] - No active profile set, falling back to 1 default profile: "default"
-2023-06-19 00:54:25.660 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.login]' package. Please check your configuration.
+2023-06-19 00:54:25.205 INFO  [com.auth.AuthApplication] - Starting LoginApplication using Java 18.0.2.1 with PID 2612 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\login\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:54:25.208 INFO  [com.auth.AuthApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:54:25.660 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.auth]' package. Please check your configuration.
 2023-06-19 00:54:25.965 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8082 (http)
 2023-06-19 00:54:25.971 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8082"]
 2023-06-19 00:54:25.971 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1635,11 +1635,11 @@ Consider the following:
 2023-06-19 00:54:26.027 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 777 ms
 2023-06-19 00:54:26.358 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8082"]
 2023-06-19 00:54:26.373 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8082 (http) with context path ''
-2023-06-19 00:54:26.380 INFO  [com.login.LoginApplication] - Started LoginApplication in 1.545 seconds (process running for 1.772)
+2023-06-19 00:54:26.380 INFO  [com.auth.AuthApplication] - Started LoginApplication in 1.545 seconds (process running for 1.772)
 2023-06-19 00:54:29.451 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:54:29.451 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:54:29.452 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:54:29.467 INFO  [com.login.LoginController] - login
+2023-06-19 00:54:29.467 INFO  [com.auth.AuthController] - login
 2023-06-19 00:54:29.467 INFO  [com.common.Common] - common
 2023-06-19 00:56:26.453 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 11516 (C:\Users\dkdle\OneDrive\Desktop\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\soso)
 2023-06-19 00:56:26.455 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
@@ -1652,9 +1652,9 @@ Consider the following:
 2023-06-19 00:56:27.742 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:56:27.756 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
 2023-06-19 00:56:27.763 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.725 seconds (process running for 2.001)
-2023-06-19 00:56:33.663 INFO  [com.login.LoginApplication] - Starting LoginApplication using Java 18.0.2.1 with PID 6080 (C:\Users\dkdle\OneDrive\Desktop\soso\login\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\soso)
-2023-06-19 00:56:33.666 INFO  [com.login.LoginApplication] - No active profile set, falling back to 1 default profile: "default"
-2023-06-19 00:56:34.186 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.login]' package. Please check your configuration.
+2023-06-19 00:56:33.663 INFO  [com.auth.AuthApplication] - Starting LoginApplication using Java 18.0.2.1 with PID 6080 (C:\Users\dkdle\OneDrive\Desktop\soso\login\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\soso)
+2023-06-19 00:56:33.666 INFO  [com.auth.AuthApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:56:34.186 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.auth]' package. Please check your configuration.
 2023-06-19 00:56:34.541 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8082 (http)
 2023-06-19 00:56:34.547 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8082"]
 2023-06-19 00:56:34.548 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1663,7 +1663,7 @@ Consider the following:
 2023-06-19 00:56:34.619 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 908 ms
 2023-06-19 00:56:34.967 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8082"]
 2023-06-19 00:56:34.983 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8082 (http) with context path ''
-2023-06-19 00:56:34.990 INFO  [com.login.LoginApplication] - Started LoginApplication in 1.714 seconds (process running for 1.971)
+2023-06-19 00:56:34.990 INFO  [com.auth.AuthApplication] - Started LoginApplication in 1.714 seconds (process running for 1.971)
 2023-06-19 00:56:36.320 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:56:36.320 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:56:36.320 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
@@ -1672,7 +1672,7 @@ Consider the following:
 2023-06-19 00:56:40.891 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:56:40.891 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:56:40.892 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:56:40.909 INFO  [com.login.LoginController] - login
+2023-06-19 00:56:40.909 INFO  [com.auth.AuthController] - login
 2023-06-19 00:56:40.909 INFO  [com.common.Common] - common
 2023-06-19 20:07:49.161 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 4516 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
 2023-06-19 20:07:49.166 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"

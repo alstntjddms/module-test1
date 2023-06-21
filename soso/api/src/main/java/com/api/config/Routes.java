@@ -1,5 +1,6 @@
 package com.api.config;
 
+import com.common.url.URL;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
@@ -12,10 +13,10 @@ public class Routes {
         return builder
                 .routes()
                 .route("kakao_route", p -> p.path("/api/kakao/**")
-                        .uri("http://localhost:8081"))
+                        .uri(URL.KAKAO_SERVER))
 
                 .route("login_route", p -> p.path("/api/login/**")
-                        .uri("http://localhost:8082"))
+                        .uri(URL.LOGIN_SERVER))
                 .build();
     }
 
