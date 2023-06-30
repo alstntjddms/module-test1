@@ -7,10 +7,11 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.login</groupId>
+    <groupId>com.auth</groupId>
     <artifactId>auth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>login</name>
+
+    <name>auth</name>
 
     <packaging>jar</packaging>
 
@@ -20,8 +21,8 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.common</groupId>
             <artifactId>common</artifactId>
-            <groupId>com.soso</groupId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>

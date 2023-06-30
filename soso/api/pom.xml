@@ -21,8 +21,8 @@
     <dependencies>
         <!-- Spring Cloud Gateway END -->
         <dependency>
+            <groupId>com.common</groupId>
             <artifactId>common</artifactId>
-            <groupId>com.soso</groupId>
             <version>0.0.1-SNAPSHOT</version>
             <!-- DB 관련 설정 의존성 제외 START -->
             <exclusions>

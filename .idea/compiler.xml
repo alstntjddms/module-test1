@@ -10,13 +10,17 @@
         <module name="kakao" />
         <module name="api" />
         <module name="common" />
-        <module name="login" />
+        <module name="auth" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="login" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api" options="-parameters" />
+      <module name="auth" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="kakao" options="-parameters" />
       <module name="login" options="-parameters" />
