@@ -59,6 +59,12 @@
             <version>0.4</version>
         </dependency>
         <!-- bcrypt END -->
+        <!-- lombok START -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- lombok END -->
     </dependencies>
 
 </project>
