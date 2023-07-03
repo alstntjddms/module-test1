@@ -1,14 +1,10 @@
 package com.kakao.dto;
 
 import com.kakao.entity.Kakao;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.*;
 import java.sql.Timestamp;
 
-@Getter
-@Setter
+@Data
 @Builder
 public class KakaoDTO {
     private int id;
@@ -35,20 +31,20 @@ public class KakaoDTO {
     // 동의항목 눌름 여부
     private boolean kakaoScopeCheck;
 
-//    public Kakao toEntity(KakaoDTO kakaoDTO) {
-//        return Kakao.builder()
-//                .id(id)
-//                .kakaoId(kakaoId)
-//                .kakaoAccessToken(kakaoAccessToken)
-//                .kakaoRefreshToken(kakaoRefreshToken)
-//                .kakaoEmail(kakaoEmail)
-//                .kakaoNickName(kakaoNickName)
-//                .kakaoGender(kakaoGender)
-//                .kakaoBirthday(kakaoBirthday)
-//                .kakaoRegisterDate(kakaoRegisterDate)
-//                .kakaoLoginDate(kakaoLoginDate)
-//                .kakaoMsgYn(kakaoMsgYn)
-//                .kakaoScopeCheck(kakaoScopeCheck)
-//                .build();
-//    }
+    public static KakaoDTO toDTO(Kakao kakao) {
+        return KakaoDTO.builder()
+                .id(kakao.getId())
+                .kakaoId(kakao.getKakaoId())
+                .kakaoAccessToken(kakao.getKakaoAccessToken())
+                .kakaoRefreshToken(kakao.getKakaoRefreshToken())
+                .kakaoEmail(kakao.getKakaoEmail())
+                .kakaoNickName(kakao.getKakaoNickName())
+                .kakaoGender(kakao.getKakaoGender())
+                .kakaoBirthday(kakao.getKakaoBirthday())
+                .kakaoRegisterDate(kakao.getKakaoRegisterDate())
+                .kakaoLoginDate(kakao.getKakaoLoginDate())
+                .kakaoMsgYn(kakao.isKakaoMsgYn())
+                .kakaoScopeCheck(kakao.isKakaoScopeCheck())
+                .build();
+    }
 }

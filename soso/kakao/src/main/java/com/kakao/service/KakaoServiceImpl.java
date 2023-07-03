@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class KakaoServiceImpl implements KakaoService {
@@ -26,25 +27,22 @@ public class KakaoServiceImpl implements KakaoService {
 
     @Override
     public List<KakaoDTO> testAllJPA() {
-        List<KakaoDTO> kakaoDTOS = new ArrayList<>();
-        for(Kakao kakao : raojpa.findAll()){
-            KakaoDTO kakaoDTO = KakaoDTO.builder()
-                    .id(kakao.getId())
-                    .kakaoId(kakao.getKakaoId())
-                    .kakaoAccessToken(kakao.getKakaoAccessToken())
-                    .kakaoRefreshToken(kakao.getKakaoRefreshToken())
-                    .kakaoEmail(kakao.getKakaoEmail())
-                    .kakaoNickName(kakao.getKakaoNickName())
-                    .kakaoGender(kakao.getKakaoGender())
-                    .kakaoBirthday(kakao.getKakaoBirthday())
-                    .kakaoRegisterDate(kakao.getKakaoRegisterDate())
-                    .kakaoLoginDate(kakao.getKakaoLoginDate())
-                    .kakaoMsgYn(kakao.isKakaoMsgYn())
-                    .kakaoScopeCheck(kakao.isKakaoScopeCheck())
-                    .build();
-            kakaoDTOS.add(kakaoDTO);
-        }
-        return kakaoDTOS;
+        // entity to dto
+        return raojpa.findAll().stream()
+                .map(KakaoDTO::toDTO)
+                .collect(Collectors.toList());
+    }
+
+    public List<Kakao> testAllJPAA() {
+        // entity가져옴
+        List<KakaoDTO> kakaoDTOS = raojpa.findAll().stream()
+                .map(KakaoDTO::toDTO)
+                .collect(Collectors.toList());
+
+        // dto to entity
+        return kakaoDTOS.stream()
+                .map(Kakao::toEntity)
+                .collect(Collectors.toList());
     }
 
 }
