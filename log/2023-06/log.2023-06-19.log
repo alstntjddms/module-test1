@@ -1,12 +1,12 @@
-2023-06-19 00:00:13.987 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8600 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:00:13.990 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:00:13.987 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8600 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:00:13.990 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:00:14.645 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:00:14.651 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:00:14.652 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
 2023-06-19 00:00:14.654 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-06-19 00:00:14.722 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
 2023-06-19 00:00:14.722 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 690 ms
-2023-06-19 00:00:14.761 WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kakaoController': Unsatisfied dependency expressed through field 'kakaoService': Error creating bean with name 'kakaoServiceImpl': Unsatisfied dependency expressed through field 'rao': No qualifying bean of type 'com.kakao.ra.itf.KakaoRAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-06-19 00:00:14.761 WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kakaoController': Unsatisfied dependency expressed through field 'kakaoService': Error creating bean with name 'kakaoServiceImpl': Unsatisfied dependency expressed through field 'rao': No qualifying bean of type 'com.log.ra.itf.KakaoRAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 2023-06-19 00:00:14.764 INFO  [o.apache.catalina.core.StandardService] - Stopping service [Tomcat]
 2023-06-19 00:00:14.774 INFO  [o.s.b.a.l.ConditionEvaluationReportLogger] - 
 
@@ -19,7 +19,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field rao in com.kakao.service.KakaoServiceImpl required a bean of type 'com.kakao.ra.itf.KakaoRAO' that could not be found.
+Field rao in com.log.service.KakaoServiceImpl required a bean of type 'com.log.ra.itf.KakaoRAO' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -27,10 +27,10 @@ The injection point has the following annotations:
 
 Action:
 
-Consider defining a bean of type 'com.kakao.ra.itf.KakaoRAO' in your configuration.
+Consider defining a bean of type 'com.log.ra.itf.KakaoRAO' in your configuration.
 
-2023-06-19 00:00:30.936 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8312 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:00:30.938 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:00:30.936 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8312 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:00:30.938 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:00:31.595 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:00:31.600 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:00:31.601 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -39,15 +39,15 @@ Consider defining a bean of type 'com.kakao.ra.itf.KakaoRAO' in your configurati
 2023-06-19 00:00:31.660 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 677 ms
 2023-06-19 00:00:31.897 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:00:31.910 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:00:31.916 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.336 seconds (process running for 1.572)
+2023-06-19 00:00:31.916 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.336 seconds (process running for 1.572)
 2023-06-19 00:00:34.648 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:00:34.648 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:00:34.649 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:00:34.666 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:15)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:22)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:00:34.666 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:15)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:22)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -96,8 +96,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:00:57.092 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1900 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:00:57.095 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:00:57.092 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1900 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:00:57.095 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:00:57.784 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:00:57.792 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:00:57.792 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -119,11 +119,11 @@ Description:
 
 The dependencies of some of the beans in the application context form a cycle:
 
-   kakaoController (field com.kakao.service.itf.KakaoService com.kakao.controller.KakaoController.kakaoService)
+   kakaoController (field com.log.service.itf.KakaoService com.log.controller.LogController.kakaoService)
       ↓
-   kakaoServiceImpl (field com.kakao.ra.itf.KakaoRAO com.kakao.service.KakaoServiceImpl.rao)
+   kakaoServiceImpl (field com.log.ra.itf.KakaoRAO com.log.service.KakaoServiceImpl.rao)
 ┌─────┐
-|  kakaoRAOImpl (field private com.kakao.ra.itf.KakaoRAO com.kakao.ra.KakaoRAOImpl.mapper)
+|  kakaoRAOImpl (field private com.log.ra.itf.KakaoRAO com.log.ra.KakaoRAOImpl.mapper)
 └─────┘
 
 
@@ -131,8 +131,8 @@ Action:
 
 Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
 
-2023-06-19 00:01:28.611 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1492 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:01:28.612 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:01:28.611 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1492 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:01:28.612 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:01:29.237 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:01:29.241 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:01:29.242 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -141,15 +141,15 @@ Relying upon circular references is discouraged and they are prohibited by defau
 2023-06-19 00:01:29.302 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 651 ms
 2023-06-19 00:01:29.518 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:01:29.531 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:01:29.538 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.283 seconds (process running for 1.508)
+2023-06-19 00:01:29.538 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.283 seconds (process running for 1.508)
 2023-06-19 00:01:32.766 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:01:32.766 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:01:32.767 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:01:32.785 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:19)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:01:32.785 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:19)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -198,8 +198,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:04:55.443 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8284 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:04:55.447 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:04:55.443 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8284 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:04:55.447 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:04:56.151 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:04:56.156 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:04:56.156 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -208,15 +208,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:04:56.214 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 733 ms
 2023-06-19 00:04:56.470 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:04:56.483 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:04:56.488 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.411 seconds (process running for 1.644)
+2023-06-19 00:04:56.488 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.411 seconds (process running for 1.644)
 2023-06-19 00:04:58.841 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:04:58.841 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:04:58.841 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:04:58.860 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:21)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:04:58.860 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:21)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -265,8 +265,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:10:13.387 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1096 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:10:13.389 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:10:13.387 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1096 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:10:13.389 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:10:14.057 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:10:14.063 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:10:14.063 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -275,15 +275,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:10:14.131 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 702 ms
 2023-06-19 00:10:14.363 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:10:14.377 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:10:14.382 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.375 seconds (process running for 1.635)
+2023-06-19 00:10:14.382 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.375 seconds (process running for 1.635)
 2023-06-19 00:10:17.375 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:10:17.376 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:10:17.377 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:10:17.395 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:19)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:10:17.395 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:19)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -332,8 +332,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:10:32.969 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1400 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:10:32.971 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:10:32.969 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1400 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:10:32.971 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:10:33.615 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:10:33.620 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:10:33.620 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -342,15 +342,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:10:33.676 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 668 ms
 2023-06-19 00:10:33.913 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:10:33.924 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:10:33.930 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.308 seconds (process running for 1.543)
+2023-06-19 00:10:33.930 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.308 seconds (process running for 1.543)
 2023-06-19 00:10:35.491 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:10:35.491 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:10:35.492 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:10:35.509 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:19)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:10:35.509 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:19)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -399,8 +399,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:10:54.682 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 12768 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:10:54.684 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:10:54.682 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 12768 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:10:54.684 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:10:55.346 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:10:55.350 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:10:55.351 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -409,15 +409,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:10:55.407 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 684 ms
 2023-06-19 00:10:55.656 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:10:55.667 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:10:55.673 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.353 seconds (process running for 1.588)
+2023-06-19 00:10:55.673 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.353 seconds (process running for 1.588)
 2023-06-19 00:10:58.394 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:10:58.395 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:10:58.395 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:10:58.412 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:21)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:10:58.412 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:21)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -466,11 +466,11 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:10:58.630 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:21)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:10:58.630 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:21)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -519,8 +519,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:11:07.315 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 13568 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:11:07.317 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:11:07.315 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 13568 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:11:07.317 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:11:07.981 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:11:07.987 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:11:07.987 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -529,15 +529,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:11:08.052 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 699 ms
 2023-06-19 00:11:08.292 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:11:08.309 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:11:08.317 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.358 seconds (process running for 1.593)
+2023-06-19 00:11:08.317 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.358 seconds (process running for 1.593)
 2023-06-19 00:11:09.208 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:11:09.208 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:11:09.208 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:11:09.225 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:20)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:11:09.225 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:20)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -586,15 +586,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:13:06.249 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 14956 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:13:06.251 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:13:06.249 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 14956 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:13:06.251 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:13:06.932 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:13:06.937 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:13:06.938 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
 2023-06-19 00:13:06.938 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-06-19 00:13:06.994 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
 2023-06-19 00:13:06.994 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 698 ms
-2023-06-19 00:13:07.034 WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kakaoController': Unsatisfied dependency expressed through field 'kakaoService': Error creating bean with name 'kakaoServiceImpl': Unsatisfied dependency expressed through field 'rao': No qualifying bean of type 'com.kakao.ra.itf.KakaoRAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-06-19 00:13:07.034 WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kakaoController': Unsatisfied dependency expressed through field 'kakaoService': Error creating bean with name 'kakaoServiceImpl': Unsatisfied dependency expressed through field 'rao': No qualifying bean of type 'com.log.ra.itf.KakaoRAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 2023-06-19 00:13:07.037 INFO  [o.apache.catalina.core.StandardService] - Stopping service [Tomcat]
 2023-06-19 00:13:07.047 INFO  [o.s.b.a.l.ConditionEvaluationReportLogger] - 
 
@@ -607,7 +607,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field rao in com.kakao.service.KakaoServiceImpl required a bean of type 'com.kakao.ra.itf.KakaoRAO' that could not be found.
+Field rao in com.log.service.KakaoServiceImpl required a bean of type 'com.log.ra.itf.KakaoRAO' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -615,10 +615,10 @@ The injection point has the following annotations:
 
 Action:
 
-Consider defining a bean of type 'com.kakao.ra.itf.KakaoRAO' in your configuration.
+Consider defining a bean of type 'com.log.ra.itf.KakaoRAO' in your configuration.
 
-2023-06-19 00:16:40.618 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8884 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:16:40.621 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:16:40.618 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8884 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:16:40.621 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:16:41.310 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:16:41.317 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:16:41.317 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -627,9 +627,9 @@ Consider defining a bean of type 'com.kakao.ra.itf.KakaoRAO' in your configurati
 2023-06-19 00:16:41.377 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 715 ms
 2023-06-19 00:16:41.616 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:16:41.628 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:16:41.633 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.386 seconds (process running for 1.622)
-2023-06-19 00:16:47.115 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 13464 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:16:47.117 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:16:41.633 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.386 seconds (process running for 1.622)
+2023-06-19 00:16:47.115 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 13464 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:16:47.117 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:16:47.796 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:16:47.802 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:16:47.802 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -638,15 +638,15 @@ Consider defining a bean of type 'com.kakao.ra.itf.KakaoRAO' in your configurati
 2023-06-19 00:16:47.862 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 702 ms
 2023-06-19 00:16:48.093 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:16:48.104 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:16:48.110 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.369 seconds (process running for 1.603)
+2023-06-19 00:16:48.110 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.369 seconds (process running for 1.603)
 2023-06-19 00:16:50.655 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:16:50.655 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:16:50.655 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:16:50.673 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:15)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:16:50.673 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:15)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -695,8 +695,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:19:55.695 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 13236 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:19:55.698 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:19:55.695 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 13236 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:19:55.698 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:19:56.382 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:19:56.387 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:19:56.388 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -705,15 +705,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:19:56.452 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 709 ms
 2023-06-19 00:19:56.688 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:19:56.701 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:19:56.707 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.406 seconds (process running for 1.655)
+2023-06-19 00:19:56.707 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.406 seconds (process running for 1.655)
 2023-06-19 00:20:01.816 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:20:01.816 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:20:01.817 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:20:01.834 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:15)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:20:01.834 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:15)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -762,8 +762,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:20:57.473 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 6428 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:20:57.478 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:20:57.473 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 6428 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:20:57.478 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:20:58.122 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:20:58.127 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:20:58.128 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -772,15 +772,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:20:58.189 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 677 ms
 2023-06-19 00:20:58.415 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:20:58.428 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:20:58.433 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.311 seconds (process running for 1.549)
+2023-06-19 00:20:58.433 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.311 seconds (process running for 1.549)
 2023-06-19 00:21:00.798 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:21:00.798 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:21:00.799 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:21:00.817 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
-	at com.kakao.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:15)
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:21:00.817 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.mapper" is null
+	at com.log.ra.KakaoRAOImpl.testAll(KakaoRAOImpl.java:15)
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:19)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -829,15 +829,15 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:21:32.166 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1536 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:21:32.168 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:21:32.166 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1536 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:21:32.168 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:21:32.812 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:21:32.819 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:21:32.820 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
 2023-06-19 00:21:32.820 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
 2023-06-19 00:21:32.878 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
 2023-06-19 00:21:32.878 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 671 ms
-2023-06-19 00:21:32.917 WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kakaoController': Unsatisfied dependency expressed through field 'kakaoService': Error creating bean with name 'kakaoServiceImpl': Unsatisfied dependency expressed through field 'rao': No qualifying bean of type 'com.kakao.ra.itf.KakaoRAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-06-19 00:21:32.917 WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'kakaoController': Unsatisfied dependency expressed through field 'kakaoService': Error creating bean with name 'kakaoServiceImpl': Unsatisfied dependency expressed through field 'rao': No qualifying bean of type 'com.log.ra.itf.KakaoRAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 2023-06-19 00:21:32.920 INFO  [o.apache.catalina.core.StandardService] - Stopping service [Tomcat]
 2023-06-19 00:21:32.931 INFO  [o.s.b.a.l.ConditionEvaluationReportLogger] - 
 
@@ -850,7 +850,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field rao in com.kakao.service.KakaoServiceImpl required a bean of type 'com.kakao.ra.itf.KakaoRAO' that could not be found.
+Field rao in com.log.service.KakaoServiceImpl required a bean of type 'com.log.ra.itf.KakaoRAO' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -858,10 +858,10 @@ The injection point has the following annotations:
 
 Action:
 
-Consider defining a bean of type 'com.kakao.ra.itf.KakaoRAO' in your configuration.
+Consider defining a bean of type 'com.log.ra.itf.KakaoRAO' in your configuration.
 
-2023-06-19 00:22:11.129 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 5216 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:22:11.131 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:22:11.129 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 5216 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:22:11.131 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:22:11.798 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:22:11.805 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:22:11.806 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -870,14 +870,14 @@ Consider defining a bean of type 'com.kakao.ra.itf.KakaoRAO' in your configurati
 2023-06-19 00:22:11.878 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 710 ms
 2023-06-19 00:22:12.135 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:22:12.150 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:22:12.156 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.396 seconds (process running for 1.622)
+2023-06-19 00:22:12.156 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.396 seconds (process running for 1.622)
 2023-06-19 00:22:15.275 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:22:15.275 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:22:15.276 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:22:15.294 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:22:15.294 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -926,8 +926,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:23:38.362 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10024 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:23:38.364 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:23:38.362 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10024 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:23:38.364 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:23:39.050 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:23:39.059 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:23:39.059 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -936,14 +936,14 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:23:39.135 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 731 ms
 2023-06-19 00:23:39.387 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:23:39.402 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:23:39.408 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.411 seconds (process running for 1.64)
+2023-06-19 00:23:39.408 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.411 seconds (process running for 1.64)
 2023-06-19 00:23:42.387 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:23:42.387 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:23:42.387 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:23:42.404 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:23:42.404 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -992,8 +992,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:28:25.911 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 3032 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:28:25.915 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:28:25.911 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 3032 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:28:25.915 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:28:26.558 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:28:26.564 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:28:26.564 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1002,14 +1002,14 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:28:26.623 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 672 ms
 2023-06-19 00:28:26.867 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:28:26.879 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:28:26.886 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.323 seconds (process running for 1.559)
+2023-06-19 00:28:26.886 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.323 seconds (process running for 1.559)
 2023-06-19 00:28:27.913 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:28:27.914 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:28:27.914 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:28:27.931 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.KakaoRAOImpl.testAll()" because "this.rao" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.KakaoRAOImpl.testAll()" because "this.rao" is null
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:18)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:28:27.931 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.KakaoRAOImpl.testAll()" because "this.rao" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.KakaoRAOImpl.testAll()" because "this.rao" is null
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:18)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -1058,8 +1058,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.KakaoRAOImpl.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:30:45.957 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 3184 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:30:45.960 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:30:45.957 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 3184 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:30:45.960 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:30:46.727 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:30:46.732 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:30:46.733 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1090,8 +1090,8 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
-2023-06-19 00:31:00.252 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 14152 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:31:00.255 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:31:00.252 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 14152 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:31:00.255 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:31:01.026 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:31:01.032 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:31:01.032 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1122,8 +1122,8 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
-2023-06-19 00:32:40.760 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 6772 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:32:40.762 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:32:40.760 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 6772 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:32:40.762 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:32:41.533 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:32:41.538 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:32:41.539 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1154,8 +1154,8 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
-2023-06-19 00:35:52.915 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 15092 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:35:52.917 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:35:52.915 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 15092 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:35:52.917 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:35:53.688 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:35:53.694 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:35:53.694 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1164,14 +1164,14 @@ Consider the following:
 2023-06-19 00:35:53.753 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 793 ms
 2023-06-19 00:35:54.108 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:35:54.120 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:35:54.128 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.547 seconds (process running for 1.789)
+2023-06-19 00:35:54.128 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.547 seconds (process running for 1.789)
 2023-06-19 00:35:56.714 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:35:56.714 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:35:56.714 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:35:56.735 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:35:56.735 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -1220,8 +1220,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:41:37.933 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 3364 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:41:37.935 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:41:37.933 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 3364 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:41:37.935 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:41:38.672 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:41:38.677 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:41:38.678 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1254,7 +1254,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
-	at com.kakao.KakaoApplication.main(KakaoApplication.java:17)
+	at com.log.LogApplication.main(KakaoApplication.java:17)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
@@ -1269,8 +1269,8 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
 	... 20 common frames omitted
-2023-06-19 00:41:51.113 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 3272 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:41:51.115 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:41:51.113 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 3272 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:41:51.115 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:41:51.868 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:41:51.874 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:41:51.875 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1303,7 +1303,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
-	at com.kakao.KakaoApplication.main(KakaoApplication.java:17)
+	at com.log.LogApplication.main(KakaoApplication.java:17)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
@@ -1318,8 +1318,8 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
 	... 20 common frames omitted
-2023-06-19 00:43:21.447 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 2628 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:43:21.452 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:43:21.447 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 2628 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:43:21.452 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:43:22.236 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:43:22.242 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:43:22.242 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1328,14 +1328,14 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.
 2023-06-19 00:43:22.303 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 805 ms
 2023-06-19 00:43:22.673 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:43:22.686 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:43:22.694 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.587 seconds (process running for 1.818)
+2023-06-19 00:43:22.694 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.587 seconds (process running for 1.818)
 2023-06-19 00:43:24.969 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:43:24.969 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:43:24.970 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:43:24.988 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:43:24.988 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -1384,8 +1384,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:43:50.047 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 9744 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:43:50.051 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:43:50.047 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 9744 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:43:50.051 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:43:50.833 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:43:50.840 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:43:50.841 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1394,14 +1394,14 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:43:50.900 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 810 ms
 2023-06-19 00:43:51.271 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:43:51.284 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:43:51.290 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.604 seconds (process running for 1.824)
+2023-06-19 00:43:51.290 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.604 seconds (process running for 1.824)
 2023-06-19 00:43:58.222 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:43:58.222 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:43:58.222 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:43:58.239 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:43:58.239 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -1450,8 +1450,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:44:29.505 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8516 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:44:29.508 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:44:29.505 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 8516 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:44:29.508 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:44:30.265 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:44:30.270 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:44:30.271 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1460,14 +1460,14 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:44:30.330 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 780 ms
 2023-06-19 00:44:30.700 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:44:30.715 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:44:30.722 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.584 seconds (process running for 1.818)
+2023-06-19 00:44:30.722 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.584 seconds (process running for 1.818)
 2023-06-19 00:44:33.332 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:44:33.332 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:44:33.333 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:44:33.353 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
-	at com.kakao.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
-	at com.kakao.controller.KakaoController.kakaoAll(KakaoController.java:33)
+2023-06-19 00:44:33.353 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.log.ra.itf.KakaoRAO.testAll()" because "this.rao" is null
+	at com.log.service.KakaoServiceImpl.testAll(KakaoServiceImpl.java:17)
+	at com.log.controller.LogController.kakaoAll(KakaoController.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -1516,8 +1516,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-06-19 00:44:57.292 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 11400 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:44:57.295 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:44:57.292 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 11400 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:44:57.295 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:44:58.099 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:44:58.108 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:44:58.109 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1526,7 +1526,7 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:44:58.179 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 840 ms
 2023-06-19 00:44:58.565 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:44:58.583 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:44:58.590 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.676 seconds (process running for 1.93)
+2023-06-19 00:44:58.590 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.676 seconds (process running for 1.93)
 2023-06-19 00:48:42.642 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:48:42.642 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:48:42.643 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
@@ -1535,8 +1535,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:48:42.890 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
 2023-06-19 00:49:11.865 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 00:49:11.874 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 00:49:14.280 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 13192 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:49:14.282 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:49:14.280 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 13192 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:49:14.282 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:49:15.045 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:49:15.051 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:49:15.051 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1545,7 +1545,7 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:49:15.113 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 790 ms
 2023-06-19 00:49:15.512 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:49:15.526 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:49:15.533 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.613 seconds (process running for 1.854)
+2023-06-19 00:49:15.533 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.613 seconds (process running for 1.854)
 2023-06-19 00:49:17.465 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:49:17.465 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:49:17.466 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
@@ -1554,8 +1554,8 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:49:17.711 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
 2023-06-19 00:50:25.887 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 00:50:25.897 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 00:50:28.155 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 6268 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:50:28.157 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:50:28.155 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 6268 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:50:28.157 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:50:28.934 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:50:28.940 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:50:28.941 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1564,19 +1564,19 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:50:29.000 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 805 ms
 2023-06-19 00:50:29.369 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:50:29.383 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:50:29.391 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.598 seconds (process running for 1.83)
+2023-06-19 00:50:29.391 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.598 seconds (process running for 1.83)
 2023-06-19 00:50:35.812 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:50:35.812 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:50:35.813 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:50:35.832 INFO  [com.kakao.controller.KakaoController] - kakao
+2023-06-19 00:50:35.832 INFO  [com.log.controller.LogController] - kakao
 2023-06-19 00:50:35.832 INFO  [com.common.Common] - common
 2023-06-19 00:50:38.428 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
 2023-06-19 00:50:38.606 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39641ac6
 2023-06-19 00:50:38.607 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
 2023-06-19 00:52:25.208 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 00:52:25.218 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 00:52:26.916 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10284 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 00:52:26.920 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:52:26.916 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10284 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 00:52:26.920 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:52:27.695 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:52:27.701 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:52:27.701 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1585,11 +1585,11 @@ java.lang.NullPointerException: Cannot invoke "com.kakao.ra.itf.KakaoRAO.testAll
 2023-06-19 00:52:27.758 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 802 ms
 2023-06-19 00:52:28.126 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:52:28.140 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:52:28.147 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.6 seconds (process running for 1.85)
+2023-06-19 00:52:28.147 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.6 seconds (process running for 1.85)
 2023-06-19 00:52:37.727 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:52:37.727 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:52:37.728 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 00:52:37.749 INFO  [com.kakao.controller.KakaoController] - kakao
+2023-06-19 00:52:37.749 INFO  [com.log.controller.LogController] - kakao
 2023-06-19 00:52:37.750 INFO  [com.common.Common] - common
 2023-06-19 00:53:14.615 INFO  [com.auth.AuthApplication] - Starting LoginApplication using Java 18.0.2.1 with PID 4232 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\login\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
 2023-06-19 00:53:14.617 INFO  [com.auth.AuthApplication] - No active profile set, falling back to 1 default profile: "default"
@@ -1641,8 +1641,8 @@ Consider the following:
 2023-06-19 00:54:29.452 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
 2023-06-19 00:54:29.467 INFO  [com.auth.AuthController] - login
 2023-06-19 00:54:29.467 INFO  [com.common.Common] - common
-2023-06-19 00:56:26.453 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 11516 (C:\Users\dkdle\OneDrive\Desktop\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\soso)
-2023-06-19 00:56:26.455 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 00:56:26.453 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 11516 (C:\Users\dkdle\OneDrive\Desktop\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\soso)
+2023-06-19 00:56:26.455 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:56:27.269 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
 2023-06-19 00:56:27.276 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:56:27.276 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
@@ -1651,7 +1651,7 @@ Consider the following:
 2023-06-19 00:56:27.344 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 849 ms
 2023-06-19 00:56:27.742 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 00:56:27.756 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 00:56:27.763 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 1.725 seconds (process running for 2.001)
+2023-06-19 00:56:27.763 INFO  [com.log.LogApplication] - Started KakaoApplication in 1.725 seconds (process running for 2.001)
 2023-06-19 00:56:33.663 INFO  [com.auth.AuthApplication] - Starting LoginApplication using Java 18.0.2.1 with PID 6080 (C:\Users\dkdle\OneDrive\Desktop\soso\login\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\soso)
 2023-06-19 00:56:33.666 INFO  [com.auth.AuthApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 00:56:34.186 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.auth]' package. Please check your configuration.
@@ -1667,15 +1667,15 @@ Consider the following:
 2023-06-19 00:56:36.320 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:56:36.320 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:56:36.320 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
-2023-06-19 00:56:36.336 INFO  [com.kakao.controller.KakaoController] - kakao
+2023-06-19 00:56:36.336 INFO  [com.log.controller.LogController] - kakao
 2023-06-19 00:56:36.336 INFO  [com.common.Common] - common
 2023-06-19 00:56:40.891 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 00:56:40.891 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 00:56:40.892 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
 2023-06-19 00:56:40.909 INFO  [com.auth.AuthController] - login
 2023-06-19 00:56:40.909 INFO  [com.common.Common] - common
-2023-06-19 20:07:49.161 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 4516 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 20:07:49.166 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:07:49.161 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 4516 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 20:07:49.166 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 20:07:49.701 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-19 20:07:49.796 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
 2023-06-19 20:07:50.268 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -1694,17 +1694,17 @@ Consider the following:
 2023-06-19 20:07:50.991 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
 2023-06-19 20:07:51.070 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.32
 2023-06-19 20:07:51.192 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
-2023-06-19 20:07:51.457 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.kakao.entity.Kakao (class must be instantiated by Interceptor)
+2023-06-19 20:07:51.457 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.log.entity.Kakao (class must be instantiated by Interceptor)
 2023-06-19 20:07:51.557 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-06-19 20:07:51.559 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:07:52.110 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-06-19 20:07:52.330 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 20:07:52.345 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 20:07:52.350 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 3.635 seconds (process running for 3.986)
+2023-06-19 20:07:52.350 INFO  [com.log.LogApplication] - Started KakaoApplication in 3.635 seconds (process running for 3.986)
 2023-06-19 20:07:52.428 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 20:07:52.428 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 20:07:52.429 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 20:07:52.449 INFO  [com.kakao.controller.KakaoController] - kakao
+2023-06-19 20:07:52.449 INFO  [com.log.controller.LogController] - kakao
 2023-06-19 20:07:52.450 INFO  [com.common.Common] - common
 2023-06-19 20:07:56.179 WARN  [o.h.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1054, SQLState: 42S22
 2023-06-19 20:07:56.179 ERROR [o.h.engine.jdbc.spi.SqlExceptionHelper] - Unknown column 'k1_0.kakao_access_token' in 'field list'
@@ -1762,8 +1762,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy107.findAll(Unknown Source)
-	at com.kakao.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
-	at com.kakao.controller.KakaoController.kakaoAllJPA(KakaoController.java:72)
+	at com.log.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
+	at com.log.controller.LogController.kakaoAllJPA(KakaoController.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -1815,8 +1815,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:10:00.206 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:10:00.207 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 20:10:00.218 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 20:10:02.912 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 9048 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 20:10:02.913 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:10:02.912 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 9048 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 20:10:02.913 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 20:10:03.385 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-19 20:10:03.466 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
 2023-06-19 20:10:03.893 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -1835,13 +1835,13 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:10:04.614 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
 2023-06-19 20:10:04.683 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.32
 2023-06-19 20:10:04.843 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
-2023-06-19 20:10:05.093 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.kakao.entity.Kakao (class must be instantiated by Interceptor)
+2023-06-19 20:10:05.093 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.log.entity.Kakao (class must be instantiated by Interceptor)
 2023-06-19 20:10:05.187 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-06-19 20:10:05.190 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:10:05.704 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-06-19 20:10:05.924 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 20:10:05.937 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 20:10:05.944 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 3.409 seconds (process running for 3.696)
+2023-06-19 20:10:05.944 INFO  [com.log.LogApplication] - Started KakaoApplication in 3.409 seconds (process running for 3.696)
 2023-06-19 20:10:07.685 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 20:10:07.685 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 20:10:07.686 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
@@ -1900,8 +1900,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy108.findAll(Unknown Source)
-	at com.kakao.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
-	at com.kakao.controller.KakaoController.kakaoAllJPA(KakaoController.java:72)
+	at com.log.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
+	at com.log.controller.LogController.kakaoAllJPA(KakaoController.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -1953,8 +1953,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:14:39.250 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:14:39.252 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 20:14:39.262 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 20:14:41.989 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1676 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 20:14:41.991 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:14:41.989 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 1676 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 20:14:41.991 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 20:14:42.496 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-19 20:14:42.584 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
 2023-06-19 20:14:43.030 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -1973,13 +1973,13 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:14:43.774 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
 2023-06-19 20:14:43.846 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.32
 2023-06-19 20:14:43.972 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
-2023-06-19 20:14:44.241 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.kakao.entity.Kakao (class must be instantiated by Interceptor)
+2023-06-19 20:14:44.241 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.log.entity.Kakao (class must be instantiated by Interceptor)
 2023-06-19 20:14:44.333 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-06-19 20:14:44.335 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:14:44.868 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-06-19 20:14:45.058 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 20:14:45.075 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 20:14:45.080 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 3.471 seconds (process running for 3.754)
+2023-06-19 20:14:45.080 INFO  [com.log.LogApplication] - Started KakaoApplication in 3.471 seconds (process running for 3.754)
 2023-06-19 20:14:49.526 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 20:14:49.526 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 20:14:49.527 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
@@ -2038,8 +2038,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy109.findAll(Unknown Source)
-	at com.kakao.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
-	at com.kakao.controller.KakaoController.kakaoAllJPA(KakaoController.java:72)
+	at com.log.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
+	at com.log.controller.LogController.kakaoAllJPA(KakaoController.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -2091,8 +2091,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:16:30.567 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:16:30.568 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 20:16:30.578 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 20:16:33.348 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 4964 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 20:16:33.350 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:16:33.348 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 4964 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 20:16:33.350 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 20:16:33.817 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-19 20:16:33.906 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
 2023-06-19 20:16:34.345 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -2111,12 +2111,12 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:16:35.028 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
 2023-06-19 20:16:35.090 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.32
 2023-06-19 20:16:35.224 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
-2023-06-19 20:16:35.464 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.kakao.entity.Kakao (class must be instantiated by Interceptor)
+2023-06-19 20:16:35.464 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.log.entity.Kakao (class must be instantiated by Interceptor)
 2023-06-19 20:16:35.554 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-06-19 20:16:35.556 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:16:36.237 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 20:16:36.252 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 20:16:36.258 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 3.273 seconds (process running for 3.554)
+2023-06-19 20:16:36.258 INFO  [com.log.LogApplication] - Started KakaoApplication in 3.273 seconds (process running for 3.554)
 2023-06-19 20:16:45.460 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 20:16:45.460 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 20:16:45.461 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
@@ -2175,8 +2175,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy108.findAll(Unknown Source)
-	at com.kakao.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
-	at com.kakao.controller.KakaoController.kakaoAllJPA(KakaoController.java:72)
+	at com.log.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
+	at com.log.controller.LogController.kakaoAllJPA(KakaoController.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -2228,8 +2228,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:18:10.049 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:18:10.050 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 20:18:10.060 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 20:18:11.865 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10308 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 20:18:11.867 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:18:11.865 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10308 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 20:18:11.867 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 20:18:12.369 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-19 20:18:12.451 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
 2023-06-19 20:18:12.882 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -2248,17 +2248,17 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:18:13.567 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
 2023-06-19 20:18:13.633 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.32
 2023-06-19 20:18:13.786 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
-2023-06-19 20:18:14.047 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.kakao.entity.Kakao (class must be instantiated by Interceptor)
+2023-06-19 20:18:14.047 INFO  [o.h.m.i.EntityInstantiatorPojoStandard] - HHH000182: No default (no-argument) constructor for class: com.log.entity.Kakao (class must be instantiated by Interceptor)
 2023-06-19 20:18:14.150 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-06-19 20:18:14.153 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:18:14.877 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 20:18:14.897 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 20:18:14.906 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 3.38 seconds (process running for 3.655)
+2023-06-19 20:18:14.906 INFO  [com.log.LogApplication] - Started KakaoApplication in 3.38 seconds (process running for 3.655)
 2023-06-19 20:18:16.156 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 20:18:16.156 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 20:18:16.157 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-19 20:18:16.284 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity : com.kakao.entity.Kakao] with root cause
-org.hibernate.InstantiationException: No default constructor for entity : com.kakao.entity.Kakao
+2023-06-19 20:18:16.284 ERROR [o.a.c.c.C.[.[.[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity : com.log.entity.Kakao] with root cause
+org.hibernate.InstantiationException: No default constructor for entity : com.log.entity.Kakao
 	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:93)
 	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:4186)
 	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1467)
@@ -2309,8 +2309,8 @@ org.hibernate.InstantiationException: No default constructor for entity : com.ka
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy108.findAll(Unknown Source)
-	at com.kakao.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
-	at com.kakao.controller.KakaoController.kakaoAllJPA(KakaoController.java:72)
+	at com.log.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
+	at com.log.controller.LogController.kakaoAllJPA(KakaoController.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -2362,8 +2362,8 @@ org.hibernate.InstantiationException: No default constructor for entity : com.ka
 2023-06-19 20:18:51.364 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:18:51.366 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 20:18:51.375 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 20:18:54.297 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 7384 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 20:18:54.300 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:18:54.297 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 7384 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 20:18:54.300 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 20:18:54.769 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-19 20:18:54.859 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
 2023-06-19 20:18:55.283 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -2386,15 +2386,15 @@ org.hibernate.InstantiationException: No default constructor for entity : com.ka
 2023-06-19 20:18:56.522 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:18:57.280 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 20:18:57.294 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 20:18:57.300 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 3.375 seconds (process running for 3.666)
+2023-06-19 20:18:57.300 INFO  [com.log.LogApplication] - Started KakaoApplication in 3.375 seconds (process running for 3.666)
 2023-06-19 20:18:58.793 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 20:18:58.793 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 20:18:58.794 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
 2023-06-19 20:19:24.222 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:19:24.224 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 20:19:24.233 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 20:19:26.123 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10616 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 20:19:26.126 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:19:26.123 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10616 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 20:19:26.126 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 20:19:26.668 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-19 20:19:26.762 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
 2023-06-19 20:19:27.204 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -2417,7 +2417,7 @@ org.hibernate.InstantiationException: No default constructor for entity : com.ka
 2023-06-19 20:19:28.483 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:19:29.142 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 20:19:29.155 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 20:19:29.160 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 3.407 seconds (process running for 3.688)
+2023-06-19 20:19:29.160 INFO  [com.log.LogApplication] - Started KakaoApplication in 3.407 seconds (process running for 3.688)
 2023-06-19 20:19:31.129 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-19 20:19:31.129 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-19 20:19:31.130 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
@@ -2476,8 +2476,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
 	at jdk.proxy2/jdk.proxy2.$Proxy108.findAll(Unknown Source)
-	at com.kakao.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
-	at com.kakao.controller.KakaoController.kakaoAllJPA(KakaoController.java:72)
+	at com.log.service.KakaoServiceImpl.testAllJPA(KakaoServiceImpl.java:30)
+	at com.log.controller.LogController.kakaoAllJPA(KakaoController.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
@@ -2529,8 +2529,8 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:19:34.725 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:19:34.726 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 20:19:34.735 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-19 20:19:36.685 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 4768 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
-2023-06-19 20:19:36.687 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-19 20:19:36.685 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 4768 (C:\Users\dkdle\OneDrive\Desktop\module-test1\soso\kakao\target\classes started by dkdle in C:\Users\dkdle\OneDrive\Desktop\module-test1)
+2023-06-19 20:19:36.687 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-19 20:19:37.235 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-19 20:19:37.332 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interfaces.
 2023-06-19 20:19:37.773 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -2553,7 +2553,7 @@ java.sql.SQLSyntaxErrorException: Unknown column 'k1_0.kakao_access_token' in 'f
 2023-06-19 20:19:39.055 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:19:39.750 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-19 20:19:39.771 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-19 20:19:39.776 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 3.464 seconds (process running for 3.74)
+2023-06-19 20:19:39.776 INFO  [com.log.LogApplication] - Started KakaoApplication in 3.464 seconds (process running for 3.74)
 2023-06-19 20:29:34.809 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-19 20:29:34.811 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-19 20:29:34.821 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.

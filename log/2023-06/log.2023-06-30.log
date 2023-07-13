@@ -1,5 +1,5 @@
-2023-06-30 14:06:55.666 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 18860 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
-2023-06-30 14:06:55.701 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-30 14:06:55.666 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 18860 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-06-30 14:06:55.701 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-30 14:06:57.892 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-30 14:06:58.415 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 499 ms. Found 1 JPA repository interfaces.
 2023-06-30 14:07:00.075 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -46,8 +46,8 @@ Action:
 
 Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
 
-2023-06-30 14:28:18.687 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 17336 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
-2023-06-30 14:28:18.691 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-30 14:28:18.687 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 17336 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-06-30 14:28:18.691 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-30 14:28:20.557 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-30 14:28:21.060 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 481 ms. Found 1 JPA repository interfaces.
 2023-06-30 14:28:22.588 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -94,8 +94,8 @@ Action:
 
 Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
 
-2023-06-30 14:33:14.061 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10424 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
-2023-06-30 14:33:14.066 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-30 14:33:14.061 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10424 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-06-30 14:33:14.066 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-30 14:33:16.036 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-30 14:33:16.575 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 513 ms. Found 1 JPA repository interfaces.
 2023-06-30 14:33:18.397 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -118,7 +118,7 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2023-06-30 14:33:25.610 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-30 14:33:28.761 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-30 14:33:28.809 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-30 14:33:28.817 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 16.609 seconds (process running for 17.268)
+2023-06-30 14:33:28.817 INFO  [com.log.LogApplication] - Started KakaoApplication in 16.609 seconds (process running for 17.268)
 2023-06-30 14:33:31.778 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-30 14:33:31.779 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-30 14:33:31.780 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
@@ -151,8 +151,8 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2023-06-30 15:10:31.530 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
 2023-06-30 15:10:31.572 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
 2023-06-30 15:10:31.696 INFO  [com.api.ApiApplication] - Started ApiApplication in 8.728 seconds (process running for 9.382)
-2023-06-30 16:32:37.792 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 9148 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
-2023-06-30 16:32:37.798 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-30 16:32:37.792 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 9148 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-06-30 16:32:37.798 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-30 16:32:40.030 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-30 16:32:40.888 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 831 ms. Found 1 JPA repository interfaces.
 2023-06-30 16:32:42.764 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -175,20 +175,20 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2023-06-30 16:32:49.556 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-30 16:32:52.187 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-30 16:32:52.226 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-30 16:32:52.234 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 16.12 seconds (process running for 16.833)
+2023-06-30 16:32:52.234 INFO  [com.log.LogApplication] - Started KakaoApplication in 16.12 seconds (process running for 16.833)
 2023-06-30 16:32:52.423 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-30 16:32:52.424 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-30 16:32:52.426 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-30 16:32:52.503 INFO  [com.kakao.controller.KakaoController] - kakao
+2023-06-30 16:32:52.503 INFO  [com.log.controller.LogController] - kakao
 2023-06-30 16:32:52.506 INFO  [com.common.Common] - common
-2023-06-30 16:43:54.372 INFO  [com.kakao.controller.KakaoController] - kakao
+2023-06-30 16:43:54.372 INFO  [com.log.controller.LogController] - kakao
 2023-06-30 16:43:54.373 INFO  [com.common.Common] - common
 2023-06-30 16:43:57.477 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-30 16:43:57.481 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-30 16:44:07.483 WARN  [com.zaxxer.hikari.pool.HikariPool] - Timed-out waiting for close connection executor to shutdown
 2023-06-30 16:44:07.484 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-30 17:06:28.152 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10328 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
-2023-06-30 17:06:28.161 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-30 17:06:28.152 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 10328 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-06-30 17:06:28.161 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-30 17:06:30.404 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-30 17:06:30.972 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 542 ms. Found 1 JPA repository interfaces.
 2023-06-30 17:06:32.933 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -206,12 +206,12 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2023-06-30 17:06:41.635 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2023-06-30 17:06:41.649 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-30 17:06:44.569 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-30 17:06:44.576 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 18.263 seconds (process running for 18.926)
+2023-06-30 17:06:44.576 INFO  [com.log.LogApplication] - Started KakaoApplication in 18.263 seconds (process running for 18.926)
 2023-06-30 17:06:44.612 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-30 17:06:44.615 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-06-30 17:06:44.642 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
-2023-06-30 17:47:49.035 INFO  [com.kakao.KakaoApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 6308 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
-2023-06-30 17:47:49.040 INFO  [com.kakao.KakaoApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-06-30 17:47:49.035 INFO  [com.log.LogApplication] - Starting KakaoApplication using Java 18.0.2.1 with PID 6308 (M:\moduels\module-test\soso\kakao\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-06-30 17:47:49.040 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
 2023-06-30 17:47:51.053 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2023-06-30 17:47:51.604 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 520 ms. Found 1 JPA repository interfaces.
 2023-06-30 17:47:53.263 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
@@ -234,11 +234,11 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2023-06-30 17:47:59.785 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-06-30 17:48:02.762 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8081"]
 2023-06-30 17:48:02.801 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8081 (http) with context path ''
-2023-06-30 17:48:02.808 INFO  [com.kakao.KakaoApplication] - Started KakaoApplication in 15.45 seconds (process running for 16.144)
+2023-06-30 17:48:02.808 INFO  [com.log.LogApplication] - Started KakaoApplication in 15.45 seconds (process running for 16.144)
 2023-06-30 17:48:03.112 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-06-30 17:48:03.113 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
 2023-06-30 17:48:03.114 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
-2023-06-30 17:48:03.198 INFO  [com.kakao.controller.KakaoController] - kakao
+2023-06-30 17:48:03.198 INFO  [com.log.controller.LogController] - kakao
 2023-06-30 17:48:03.202 INFO  [com.common.Common] - common
 2023-06-30 17:56:52.977 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-30 17:56:52.981 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...

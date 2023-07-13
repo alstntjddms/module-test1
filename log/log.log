@@ -1,0 +1,214 @@
+2023-07-13 13:20:07.315 INFO  [com.log.LogApplication] - Starting LogApplication using Java 18.0.2.1 with PID 14764 (M:\moduels\module-test\soso\log\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-07-13 13:20:07.320 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-07-13 13:20:09.084 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-13 13:20:09.125 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2023-07-13 13:20:09.313 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.log]' package. Please check your configuration.
+2023-07-13 13:20:11.110 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8088 (http)
+2023-07-13 13:20:11.140 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8088"]
+2023-07-13 13:20:11.141 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-07-13 13:20:11.142 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-13 13:20:11.327 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-07-13 13:20:11.328 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 3896 ms
+2023-07-13 13:20:11.702 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-07-13 13:20:12.259 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17c4dc5b
+2023-07-13 13:20:12.266 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-07-13 13:20:12.388 INFO  [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-13 13:20:12.647 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-07-13 13:20:12.655 INFO  [org.hibernate.cfg.Environment] - HHH000406: Using bytecode reflection optimizer
+2023-07-13 13:20:13.323 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 13:20:13.948 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-13 13:20:14.214 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.33
+2023-07-13 13:20:14.593 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 13:20:15.471 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-13 13:20:15.494 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 13:20:16.492 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-13 13:20:17.494 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8088"]
+2023-07-13 13:20:17.532 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-13 13:20:17.548 INFO  [com.log.LogApplication] - Started LogApplication in 11.73 seconds (process running for 12.358)
+2023-07-13 13:22:06.781 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 13:22:06.784 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-07-13 13:22:06.816 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-07-13 13:22:10.112 INFO  [com.log.LogApplication] - Starting LogApplication using Java 18.0.2.1 with PID 19244 (M:\moduels\module-test\soso\log\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-07-13 13:22:10.119 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-07-13 13:22:12.008 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-13 13:22:12.049 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2023-07-13 13:22:12.228 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.log]' package. Please check your configuration.
+2023-07-13 13:22:13.929 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8088 (http)
+2023-07-13 13:22:13.959 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8088"]
+2023-07-13 13:22:13.960 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-07-13 13:22:13.961 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-13 13:22:14.158 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-07-13 13:22:14.159 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 3923 ms
+2023-07-13 13:22:14.539 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-07-13 13:22:15.121 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6870cfac
+2023-07-13 13:22:15.129 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-07-13 13:22:15.259 INFO  [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-13 13:22:15.531 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-07-13 13:22:15.540 INFO  [org.hibernate.cfg.Environment] - HHH000406: Using bytecode reflection optimizer
+2023-07-13 13:22:16.212 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 13:22:16.805 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-13 13:22:17.149 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.33
+2023-07-13 13:22:17.568 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 13:22:18.428 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-13 13:22:18.456 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 13:22:19.530 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-13 13:22:20.628 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8088"]
+2023-07-13 13:22:20.687 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-13 13:22:20.697 INFO  [com.log.LogApplication] - Started LogApplication in 12.332 seconds (process running for 12.935)
+2023-07-13 13:24:22.192 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13 13:24:22.193 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-07-13 13:24:22.195 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-07-13 13:24:22.603 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:24:22.606 INFO  [com.common.Common] - common
+2023-07-13 13:24:27.598 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:24:27.599 INFO  [com.common.Common] - common
+2023-07-13 13:27:45.749 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:27:45.750 INFO  [com.common.Common] - common
+2023-07-13 13:36:09.688 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:36:09.690 INFO  [com.common.Common] - common
+2023-07-13 13:36:20.021 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:36:20.024 INFO  [com.common.Common] - common
+2023-07-13 13:36:55.059 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:36:55.060 INFO  [com.common.Common] - common
+2023-07-13 13:39:41.694 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:39:41.695 INFO  [com.common.Common] - common
+2023-07-13 13:47:52.959 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:47:52.960 INFO  [com.common.Common] - common
+2023-07-13 13:55:12.838 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 13:55:12.839 INFO  [com.common.Common] - common
+2023-07-13 15:44:37.071 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 15:44:37.072 INFO  [com.common.Common] - common
+2023-07-13 15:45:19.636 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 15:45:19.637 INFO  [com.common.Common] - common
+2023-07-13 15:46:34.486 INFO  [com.log.controller.LogController] - kakao
+2023-07-13 15:46:34.487 INFO  [com.common.Common] - common
+2023-07-13 16:06:42.956 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 16:06:42.960 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-07-13 16:06:43.008 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-07-13 16:06:48.146 INFO  [com.log.LogApplication] - Starting LogApplication using Java 18.0.2.1 with PID 24208 (M:\moduels\module-test\soso\log\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-07-13 16:06:48.152 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:06:50.144 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-13 16:06:50.181 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2023-07-13 16:06:50.429 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.log]' package. Please check your configuration.
+2023-07-13 16:06:52.273 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8088 (http)
+2023-07-13 16:06:52.302 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8088"]
+2023-07-13 16:06:52.303 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-07-13 16:06:52.304 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-13 16:06:52.482 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-07-13 16:06:52.483 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 4216 ms
+2023-07-13 16:06:52.876 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-07-13 16:06:53.676 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2801827a
+2023-07-13 16:06:53.684 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-07-13 16:06:53.800 INFO  [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-13 16:06:54.050 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-07-13 16:06:54.059 INFO  [org.hibernate.cfg.Environment] - HHH000406: Using bytecode reflection optimizer
+2023-07-13 16:06:54.703 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 16:06:55.285 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-13 16:06:55.564 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.33
+2023-07-13 16:06:55.953 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 16:06:57.029 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-13 16:06:57.056 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 16:06:58.180 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-13 16:06:59.705 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8088"]
+2023-07-13 16:06:59.765 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-13 16:06:59.777 INFO  [com.log.LogApplication] - Started LogApplication in 13.088 seconds (process running for 13.671)
+2023-07-13 16:17:45.717 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 16:17:45.721 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-07-13 16:17:45.755 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-07-13 16:17:51.020 INFO  [com.log.LogApplication] - Starting LogApplication using Java 18.0.2.1 with PID 23496 (M:\moduels\module-test\soso\log\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-07-13 16:17:51.026 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:17:53.013 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-13 16:17:53.054 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2023-07-13 16:17:53.274 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.log]' package. Please check your configuration.
+2023-07-13 16:17:55.018 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8088 (http)
+2023-07-13 16:17:55.053 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8088"]
+2023-07-13 16:17:55.054 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-07-13 16:17:55.055 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-13 16:17:55.243 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-07-13 16:17:55.244 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 4105 ms
+2023-07-13 16:17:55.683 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-07-13 16:17:56.267 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62a6674f
+2023-07-13 16:17:56.277 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-07-13 16:17:56.397 INFO  [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-13 16:17:56.692 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-07-13 16:17:56.699 INFO  [org.hibernate.cfg.Environment] - HHH000406: Using bytecode reflection optimizer
+2023-07-13 16:17:57.382 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 16:17:57.982 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-13 16:17:58.259 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.33
+2023-07-13 16:17:58.643 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 16:17:59.481 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-13 16:17:59.507 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 16:18:00.581 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-13 16:18:01.615 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8088"]
+2023-07-13 16:18:01.669 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-13 16:18:01.682 INFO  [com.log.LogApplication] - Started LogApplication in 12.219 seconds (process running for 12.857)
+2023-07-13 17:55:49.357 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 17:55:49.361 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-07-13 17:55:49.393 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-07-13 17:55:54.610 INFO  [com.log.LogApplication] - Starting LogApplication using Java 18.0.2.1 with PID 16732 (M:\moduels\module-test\soso\log\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-07-13 17:55:54.616 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:55:56.465 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-13 17:55:56.505 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2023-07-13 17:55:56.708 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.log]' package. Please check your configuration.
+2023-07-13 17:55:58.484 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8088 (http)
+2023-07-13 17:55:58.512 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8088"]
+2023-07-13 17:55:58.514 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-07-13 17:55:58.515 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-13 17:55:58.714 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-07-13 17:55:58.715 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 3993 ms
+2023-07-13 17:55:59.089 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-07-13 17:55:59.650 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64f4f12
+2023-07-13 17:55:59.657 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-07-13 17:55:59.776 INFO  [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-13 17:56:00.121 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-07-13 17:56:00.128 INFO  [org.hibernate.cfg.Environment] - HHH000406: Using bytecode reflection optimizer
+2023-07-13 17:56:00.839 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 17:56:01.456 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-13 17:56:01.912 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.33
+2023-07-13 17:56:02.547 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 17:56:03.791 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-13 17:56:03.829 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 17:56:04.932 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-13 17:56:05.973 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8088"]
+2023-07-13 17:56:06.010 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-13 17:56:06.021 INFO  [com.log.LogApplication] - Started LogApplication in 12.896 seconds (process running for 13.513)
+2023-07-13 17:58:13.784 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 17:58:13.788 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-07-13 17:58:13.816 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-07-13 17:58:18.978 INFO  [com.log.LogApplication] - Starting LogApplication using Java 18.0.2.1 with PID 21380 (M:\moduels\module-test\soso\log\target\classes started by s_msjeon23032 in M:\moduels\module-test)
+2023-07-13 17:58:18.986 INFO  [com.log.LogApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:58:21.319 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-13 17:58:21.362 INFO  [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2023-07-13 17:58:21.540 WARN  [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.log]' package. Please check your configuration.
+2023-07-13 17:58:23.505 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8088 (http)
+2023-07-13 17:58:23.530 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8088"]
+2023-07-13 17:58:23.532 INFO  [o.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-07-13 17:58:23.533 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-07-13 17:58:23.707 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-07-13 17:58:23.708 INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 4617 ms
+2023-07-13 17:58:24.172 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-07-13 17:58:24.796 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37d28938
+2023-07-13 17:58:24.804 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-07-13 17:58:24.930 INFO  [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-13 17:58:25.217 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-07-13 17:58:25.229 INFO  [org.hibernate.cfg.Environment] - HHH000406: Using bytecode reflection optimizer
+2023-07-13 17:58:25.891 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 17:58:26.433 INFO  [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-13 17:58:26.692 INFO  [org.hibernate.orm.dialect] - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.33
+2023-07-13 17:58:27.086 INFO  [o.h.b.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+2023-07-13 17:58:27.939 INFO  [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-13 17:58:27.963 INFO  [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-13 17:58:28.941 WARN  [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-13 17:58:29.908 INFO  [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8088"]
+2023-07-13 17:58:29.953 INFO  [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8088 (http) with context path ''
+2023-07-13 17:58:29.964 INFO  [com.log.LogApplication] - Started LogApplication in 12.484 seconds (process running for 13.13)
+2023-07-13 18:01:57.537 INFO  [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13 18:01:57.538 INFO  [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-07-13 18:01:57.540 INFO  [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-07-13 18:01:57.829 WARN  [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity com.log.controller.LogController.info(com.common.LogDTO) throws java.lang.Exception]
+2023-07-13 18:02:09.578 WARN  [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity com.log.controller.LogController.info(com.common.LogDTO) throws java.lang.Exception]
+2023-07-13 18:02:16.663 WARN  [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity com.log.controller.LogController.info(com.common.LogDTO) throws java.lang.Exception]
+2023-07-13 18:02:48.721 INFO  [com.log.controller.LogController] - aaa
+2023-07-13 18:02:48.722 INFO  [com.common.Common] - common
+2023-07-13 18:03:04.556 INFO  [com.log.controller.LogController] - aaa
+2023-07-13 18:03:04.557 INFO  [com.common.Common] - common

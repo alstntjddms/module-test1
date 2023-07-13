@@ -1,14 +1,13 @@
 package com.kakao.service;
 
 import com.kakao.dto.KakaoDTO;
-import com.kakao.entity.Kakao;
 import com.kakao.ra.itf.KakaoRAO;
 import com.kakao.ra.itf.KakaoRAOJPA;
+import com.kakao.entity.Kakao;
 import com.kakao.service.itf.KakaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

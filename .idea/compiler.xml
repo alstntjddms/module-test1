@@ -11,6 +11,7 @@
         <module name="api" />
         <module name="common" />
         <module name="auth" />
+        <module name="log" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="auth" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="kakao" options="-parameters" />
+      <module name="log" options="-parameters" />
       <module name="login" options="-parameters" />
       <module name="soso" options="" />
     </option>

@@ -1,6 +1,7 @@
 package com.common.restapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -23,6 +24,15 @@ public class RestAPI {
     public String get(String uri) {
         return webClient.get()
                 .uri(uri)
+                .retrieve()
+                .bodyToMono(String.class)
+                .block();
+    }
+
+    public String get(String uri, HttpHeaders headers) {
+        return webClient.get()
+                .uri(uri)
+                .headers(httpHeaders -> httpHeaders.addAll(headers))
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
