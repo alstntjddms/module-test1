@@ -4,6 +4,7 @@ import com.common.Common;
 import com.common.LogDTO;
 import com.common.restapi.RestAPI;
 import com.common.aes.AES256;
+import com.log.service.itf.LogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,30 +16,35 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class LogController {
     private final static Logger log = LoggerFactory.getLogger(LogController.class);
-    @Autowired
-    Common common;
-    @Autowired
-    RestAPI restAPI;
-    @Autowired
-    AES256 aes256;
 
+    @Autowired
+    LogService logService;
     @PostMapping("/info")
-    public ResponseEntity info(@RequestBody LogDTO logDTO) throws Exception {
-        System.out.println("LogController.kakao");
-        log.info(logDTO.getClassName() + logDTO.getMethodName() + logDTO.getLog());
-
-        return new ResponseEntity(aes256.encrypt(common.com()), HttpStatus.OK);
+    public ResponseEntity info(@RequestBody LogDTO logDTO) {
+        try{
+            System.out.println("LogController.info");
+            return new ResponseEntity(logService.info(logDTO), HttpStatus.OK);
+        }catch (Exception e){
+            log.warn(e.getMessage());
+            return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
-    @GetMapping("/warn")
-    public ResponseEntity warn() throws Exception {
-        System.out.println("LogController.kakao");
-        log.info("kakao");
-        return new ResponseEntity(aes256.encrypt(common.com()), HttpStatus.OK);
+    @PostMapping("/warn")
+    public ResponseEntity warn(@RequestBody LogDTO logDTO) {
+        try{
+            return new ResponseEntity(logService.warn(logDTO), HttpStatus.OK);
+        }catch (Exception e){
+            log.warn(e.getMessage());
+            return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
-
-//    @GetMapping("/kakao1")
-//    public ResponseEntity kakao1() {
-//        log.info("kakao1");
-//        return new ResponseEntity(restAPI.get("http://localhost:8082/api/login"), HttpStatus.OK);
-//    }
+    @PostMapping("/debug")
+    public ResponseEntity debug(@RequestBody LogDTO logDTO) {
+        try{
+            return new ResponseEntity(logService.debug(logDTO), HttpStatus.OK);
+        }catch (Exception e){
+            log.warn(e.getMessage());
+            return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
 }

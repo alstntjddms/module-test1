@@ -6,6 +6,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.reactive.function.client.WebClientResponseException;
 import reactor.core.publisher.Mono;
 
 /**
@@ -23,7 +24,8 @@ public class AsyncRestAPI {
         return webClient.get()
                 .uri(uri)
                 .retrieve()
-                .bodyToMono(String.class);
+                .bodyToMono(String.class)
+                .onErrorComplete();
     }
 
     public <T> Mono<T> post(String uri, Object object, Class<T> responseType) {
@@ -31,9 +33,10 @@ public class AsyncRestAPI {
                 .uri(uri)
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)
-                .body(BodyInserters.fromValue(object))
+                .bodyValue(object)
                 .retrieve()
-                .bodyToMono(responseType);
+                .bodyToMono(responseType)
+                .onErrorComplete();
     }
 
     public <T> Mono<T> put(String uri, Object object, Class<T> responseType) {
@@ -43,7 +46,8 @@ public class AsyncRestAPI {
                 .accept(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromValue(object))
                 .retrieve()
-                .bodyToMono(responseType);
+                .bodyToMono(responseType)
+                .onErrorComplete();
     }
 
     public <T> Mono<T> delete(String uri, Object object, Class<T> responseType) {
@@ -53,7 +57,8 @@ public class AsyncRestAPI {
                 .accept(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromValue(object))
                 .retrieve()
-                .bodyToMono(responseType);
+                .bodyToMono(responseType)
+                .onErrorComplete();
     }
 
     public <T> Mono<T> patch(String uri, Object object, Class<T> responseType) {
@@ -63,6 +68,7 @@ public class AsyncRestAPI {
                 .accept(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromValue(object))
                 .retrieve()
-                .bodyToMono(responseType);
+                .bodyToMono(responseType)
+                .onErrorComplete();
     }
 }

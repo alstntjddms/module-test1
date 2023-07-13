@@ -29,14 +29,14 @@ public class RestAPI {
                 .block();
     }
 
-    public String get(String uri, HttpHeaders headers) {
-        return webClient.get()
-                .uri(uri)
-                .headers(httpHeaders -> httpHeaders.addAll(headers))
-                .retrieve()
-                .bodyToMono(String.class)
-                .block();
-    }
+//    public String get(String uri, HttpHeaders headers) {
+//        return webClient.get()
+//                .uri(uri)
+//                .headers(httpHeaders -> httpHeaders.addAll(headers))
+//                .retrieve()
+//                .bodyToMono(String.class)
+//                .block();
+//    }
     public <T> T post(String uri, Object object, Class<T> responseType) {
         return webClient.post()
                 .uri(uri)

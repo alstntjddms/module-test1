@@ -20,7 +20,7 @@ public class Routes {
                         .filters(f -> f.filter(customAuthFilter.apply(new CustomAuthFilter.Config())))
                         .uri(URL.AUTH_SERVER))
                 .route("log_route", p -> p.path("/api/log/**")
-                        .filters(f -> f.filter(customAuthFilter.apply(new CustomAuthFilter.Config())))
+//                        .filters(f -> f.filter(customAuthFilter.apply(new CustomAuthFilter.Config())))
                         .uri(URL.LOG_SERVER))
                 .build();
     }

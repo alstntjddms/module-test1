@@ -2,16 +2,14 @@ package com.kakao.controller;
 
 import com.common.Common;
 import com.common.Log;
+import com.common.LogDTO;
 import com.common.LogFactory;
 import com.common.restapi.AsyncRestAPI;
-import com.common.restapi.RestAPI;
 import com.common.aes.AES256;
+import com.common.restapi.RestAPI;
 import com.kakao.dto.KakaoDTO;
 import com.kakao.service.itf.KakaoService;
-import jakarta.annotation.PostConstruct;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,8 +20,6 @@ import java.util.List;
 
 @RestController
 public class KakaoController {
-//    private static final Logger log = LoggerFactory.getLogger(KakaoController.class);
-
     private Log log;
 
     @Autowired
@@ -33,7 +29,7 @@ public class KakaoController {
     @Autowired
     Common common;
     @Autowired
-    AsyncRestAPI restAPI;
+    RestAPI restAPI;
 
     @Autowired
     AES256 aes256;
@@ -41,13 +37,14 @@ public class KakaoController {
     KakaoService kakaoService;
 
     @GetMapping("/kakao")
-    public ResponseEntity kakao(@RequestHeader HttpHeaders headers) throws Exception {
+    public ResponseEntity kakao() throws Exception {
 
 
         System.out.println("KakaoController.kakao");
+        System.out.println("log = " + log);
         log.info("kakao", "로그출력");
         // 헤더 전달
-//        restAPI.get("http://localhost:8080/api/log/log", headers);
+//        restAPI.post("http://localhost:8080/api/log/info", new LogDTO("aaa", "aa", "aaa"), LogDTO.class);
         return new ResponseEntity(aes256.encrypt(common.com()), HttpStatus.OK);
     }
 

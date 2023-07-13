@@ -6,7 +6,8 @@
     <!-- 로그 파일 이름 -->
     <property name="LOG_FILE_NAME" value="log"/>
     <!-- 로그 출력 패턴 -->
-    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%logger{40}] - %msg%n"/>
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%c{1}] - %msg%n"/>
+<!--    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%logger{40}] - %msg%n"/>-->
 <!--    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] [%logger{40}] - %msg%n"/>-->
     <!-- 로그 레벨 -->
     <!--
