@@ -1,9 +1,6 @@
 package com.log.controller;
 
-import com.common.Common;
-import com.common.LogDTO;
-import com.common.restapi.RestAPI;
-import com.common.aes.AES256;
+import com.common.log.LogDTO;
 import com.log.service.itf.LogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,10 +16,18 @@ public class LogController {
 
     @Autowired
     LogService logService;
+    @PostMapping("/debug")
+    public ResponseEntity debug(@RequestBody LogDTO logDTO) {
+        try{
+            return new ResponseEntity(logService.debug(logDTO), HttpStatus.OK);
+        }catch (Exception e){
+            log.warn(e.getMessage());
+            return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
     @PostMapping("/info")
     public ResponseEntity info(@RequestBody LogDTO logDTO) {
         try{
-            System.out.println("LogController.info");
             return new ResponseEntity(logService.info(logDTO), HttpStatus.OK);
         }catch (Exception e){
             log.warn(e.getMessage());
@@ -34,16 +39,7 @@ public class LogController {
         try{
             return new ResponseEntity(logService.warn(logDTO), HttpStatus.OK);
         }catch (Exception e){
-            log.warn(e.getMessage());
-            return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
-        }
-    }
-    @PostMapping("/debug")
-    public ResponseEntity debug(@RequestBody LogDTO logDTO) {
-        try{
-            return new ResponseEntity(logService.debug(logDTO), HttpStatus.OK);
-        }catch (Exception e){
-            log.warn(e.getMessage());
+            log.warn("warn 로그 저장 에러... \nLogDTO : " + logDTO.toString() + "\n에러 메시지 : " + e.getMessage());
             return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }

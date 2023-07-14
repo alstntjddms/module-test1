@@ -1,10 +1,9 @@
 package com.kakao.controller;
 
 import com.common.Common;
-import com.common.Log;
-import com.common.LogDTO;
-import com.common.LogFactory;
-import com.common.restapi.AsyncRestAPI;
+import com.common.hash.SHA256;
+import com.common.log.Log;
+import com.common.log.LogFactory;
 import com.common.aes.AES256;
 import com.common.restapi.RestAPI;
 import com.kakao.dto.KakaoDTO;
@@ -20,32 +19,27 @@ import java.util.List;
 
 @RestController
 public class KakaoController {
-    private Log log;
-
-    @Autowired
-    private void setLog(LogFactory logFactory) {
-        this.log = logFactory.createLog(KakaoController.class);
-    }
+    private final Log log = LogFactory.getInstance().createLog(KakaoController.class);
     @Autowired
     Common common;
     @Autowired
     RestAPI restAPI;
-
     @Autowired
     AES256 aes256;
+    @Autowired
+    SHA256 sha256;
     @Autowired
     KakaoService kakaoService;
 
     @GetMapping("/kakao")
     public ResponseEntity kakao() throws Exception {
-
-
-        System.out.println("KakaoController.kakao");
-        System.out.println("log = " + log);
-        log.info("kakao", "로그출력");
-        // 헤더 전달
-//        restAPI.post("http://localhost:8080/api/log/info", new LogDTO("aaa", "aa", "aaa"), LogDTO.class);
-        return new ResponseEntity(aes256.encrypt(common.com()), HttpStatus.OK);
+        try{
+            log.info("kakao", "Start");
+            return new ResponseEntity(aes256.encrypt(common.com()), HttpStatus.OK);
+        }catch (Exception e){
+            log.warn("kakao", e.getMessage());
+            return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/kakao1")
@@ -70,7 +64,6 @@ public class KakaoController {
 
     @GetMapping("/kakao3")
     public ResponseEntity kakao3() {
-//        log.info("kakao1");
         HashMap<String, String> test = new HashMap<>();
         test.put("aa", "aa");
         List<HashMap<String, String>> list = new ArrayList<>();
