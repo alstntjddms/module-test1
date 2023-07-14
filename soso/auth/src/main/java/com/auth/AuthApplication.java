@@ -15,12 +15,5 @@ public class AuthApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AuthApplication.class, args);
 	}
-	@Configuration
-	public class WebMvcConfig implements WebMvcConfigurer {
-		@Override
-		public void configurePathMatch(PathMatchConfigurer configurer) {
-			configurer.addPathPrefix("/api", HandlerTypePredicate.forAnnotation(RestController.class));
-		}
-	}
 
 }
