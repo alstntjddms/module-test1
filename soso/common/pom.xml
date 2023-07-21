@@ -59,12 +59,13 @@
             <version>0.4</version>
         </dependency>
         <!-- bcrypt END -->
-        <!-- lombok START -->
+        <!-- SpringDoc START -->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.1.0</version>
         </dependency>
-        <!-- lombok END -->
+        <!-- SpringDoc END -->
     </dependencies>
 
 </project>
